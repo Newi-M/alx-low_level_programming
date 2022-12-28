@@ -5,7 +5,7 @@
  *
  * @n:input
  *
- * Return: 0
+ * Return: nothing
  */
 void print_diagonal(int n)
 {
@@ -28,5 +28,4 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
 }
