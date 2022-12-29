@@ -10,7 +10,7 @@ int main(void)
 	int i = 0;
 	unsigned long int n1 = 1, n2 = 2, fn;
 
-	while (i < 98)
+	while (i < 96)
 	{
 		if (i == 0)
 			printf("%lu", n1);
