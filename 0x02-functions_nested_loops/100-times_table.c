@@ -1,34 +1,51 @@
 #include "main.h"
 
 /**
- * print_times_table - print times table
- *
- * @n: input number
+ * print_times_table - Prints a multiplication table
+ * @n: input
  *
  * Return: nothing
  */
 void print_times_table(int n)
 {
-	int i, j, m;
+	int x, y, z;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (i = 0; i <= n; i++)
+		for (x = 0; x <= n; x++)
 		{
-			for (j = 0; j <= n; j++)
+			for (y = 0; y <= n; y++)
 			{
-				m = i * j;
-				printf("%d", m);
-				if (j == n)
-					continue;
-				putchar(',');
-				putchar(' ');
-				putchar(' ');
-				if (n >= 10)
-					continue;
-				putchar(' ');
+				z = x * y;
+				if (z > 99)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else if (z > 9)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else
+				{
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
+				}
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
