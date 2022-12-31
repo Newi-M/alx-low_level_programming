@@ -1,6 +1,6 @@
-Tasks in this Directory
+# **Tasks in this Directory**
 
-The output of the program:
+**0. The output of the program:**
 
     The number, followed by
         if the number is greater than 0: is positive
@@ -8,7 +8,7 @@ The output of the program:
         if the number is less than 0: is negative
     followed by a new line
     
-The output of the program:
+**1. The output of the program:**
 
     The string Last digit of, followed by
     n, followed by
@@ -18,21 +18,21 @@ The output of the program:
         if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0
     followed by a new line
 
-A program that prints the alphabet in lowercase, followed by a new line
+**2. A program that prints the alphabet in lowercase, followed by a new line**
 
-A program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+**3. A program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.**
 
-A program that prints the alphabet in lowercase, followed by a new line.
+**4. A program that prints the alphabet in lowercase, followed by a new line.**
 
-A program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+**5. A program that prints all single digit numbers of base 10 starting from 0, followed by a new line.**
 
-A program that prints the lowercase alphabet in reverse, followed by a new line.
+**6. A program that prints the lowercase alphabet in reverse, followed by a new line.**
 
-A program that prints all the numbers of base 16 in lowercase, followed by a new line.
+**7. A program that prints all the numbers of base 16 in lowercase, followed by a new line.**
 
-A program that prints all possible combinations of single-digit numbers.
+**8. A program that prints all possible combinations of single-digit numbers.**
 
-A program that prints all possible different combinations of two digits.
+**9. A program that prints all possible different combinations of two digits.**
 
     Numbers must be separated by ,, followed by a space
     The two digits must be different
@@ -40,7 +40,7 @@ A program that prints all possible different combinations of two digits.
     Print only the smallest combination of two digits
     Numbers should be printed in ascending order, with two digits
     
-A program that prints all possible different combinations of three digits.
+**10. A program that prints all possible different combinations of three digits.**
 
     Numbers must be separated by ,, followed by a space
     The three digits must be different
@@ -48,7 +48,7 @@ A program that prints all possible different combinations of three digits.
     Print only the smallest combination of three digits
     Numbers should be printed in ascending order, with three digits
 
-A program that prints all possible combinations of two two-digit numbers.
+**11. A program that prints all possible combinations of two two-digit numbers.**
 
     The numbers should range from 0 to 99
     The two numbers should be separated by a space
