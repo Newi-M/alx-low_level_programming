@@ -28,6 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 
-	dest[l + n + 1] = '\0';
+	dest[l] = '\0';
 	return (dest);
 }
