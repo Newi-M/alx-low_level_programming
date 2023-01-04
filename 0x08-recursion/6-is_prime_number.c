@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 int _prime(int n, int i);
 
