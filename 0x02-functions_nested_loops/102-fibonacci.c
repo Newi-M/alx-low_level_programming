@@ -8,10 +8,11 @@
 int main(void)
 {
 	int i = 0;
+
 	long int j = 1, k = 2, sum;
 
-    printf("%d", j);
-    printf(", %d", k);
+	printf("%d", j);
+	printf(", %d", k);
 
 	while (i < 48)
 	{
@@ -19,9 +20,10 @@ int main(void)
 		printf(", %ld", sum);
 		j = k;
 		k = sum;
-		
-        i++;
+
+		i++;
 	}
+
 	printf("\n");
 	return (0);
 }
