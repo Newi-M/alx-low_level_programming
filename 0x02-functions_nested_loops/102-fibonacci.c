@@ -11,8 +11,8 @@ int main(void)
 
 	long int j = 1, k = 2, sum;
 
-	printf("%d", j);
-	printf(", %d", k);
+	printf("%ld", j);
+	printf(", %ld", k);
 
 	while (i < 48)
 	{
@@ -25,5 +25,6 @@ int main(void)
 	}
 
 	printf("\n");
+
 	return (0);
 }
