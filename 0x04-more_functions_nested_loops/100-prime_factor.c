@@ -12,7 +12,7 @@ int main(void)
 	long n = 612852475143;
 	double square = sqrt(n);
 
-	for (i = 1; i <= square; i++)
+	for (i = 1; i < square; i++)
 	{
 		if (n % i == 0)
 		{
