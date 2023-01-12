@@ -1,13 +1,13 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
-  * _calloc - ...
-  * @nmemb: number of members
-  * @size: size
-  *
-  * Return: ...
-  */
+ * _calloc - ...
+ * @nmemb: ...
+ * @size: ...
+ *
+ * Return: ...
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int i = 0, l = 0;
