@@ -24,10 +24,8 @@ int main(int argc, char *argv[])
 				puts("Error");
 				return (1);
 			}
-			else
-			{
-				sum += atoi(argv[i][j]);
-			}
+
+			sum += atoi(argv[i][j]);
 		}
 	}
 
