@@ -1,34 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
 
 /**
- * main - adds numbers
+ * main - add numbers
  * @argc: size
  * @argv: array
  *
- * Return: 0 if no errors, else 1
+ * Return: 1 or 0
  */
 int main(int argc, char *argv[])
 {
-	int i, j, sum;
+	unsigned int i, j, sum;
+	char *p;
 
 	sum = 0;
 
-	for (i = 1; i < argc; i++)
+	if (argc > 1)
 	{
-		for (j = 0; argv[i][j] != 0; j++)
+		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i][j]) == 0)
+			p = argv[i];
+
+			for (j = 0; j < strlen(p); j++)
 			{
-				puts("Error");
-				return (1);
+				if (p[j] < 48 || p[j] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 
-			sum += atoi(argv[i][j]);
+			sum += atoi(p);
+			p++;
 		}
+
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
 	}
 
-	printf("%d\n", sum);
 	return (0);
 }
