@@ -2,7 +2,7 @@
 #define _HEADER_
 
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
  * struct dog - struct for different elements
  * @name: name
