@@ -1,35 +1,32 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - sum of all numbers
- * @n: number of arguments
+ * sum_them_all - sum of numbers
+ * @n: number of variables
  *
- * Return: sum
+ * Return: sum or 0
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == 0)
-		return (0);
+	va_list args;
 
-	va_list m;
+	unsigned int i = 0;
 
-	va_start(m, n);
+	int sum = 0;
 
-	int i, j;
-
-	long sum;
-
-	for (i = 0; i < n; i++)
+	if (n != 0)
 	{
-		j = va_arg(m, int);
+		va_start(args, n);
 
-		sum += j;
+		while (i < n)
+		{
+			sum += va_arg(args, int);
+			i++;
+		}
+
+		va_end(args);
+		return (sum);
 	}
 
-	va_end(m);
-
-	return (sum);
+	return (0);
 }
-
-
-
