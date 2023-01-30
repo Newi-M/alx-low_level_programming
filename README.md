@@ -18,6 +18,12 @@
 
 # **0x09. C - Static libraries**
 
+# **0x10. C - Variadic functions**
+
+# **0x12. C - Singly linked list**
+
+# **0x13. C - More singly linked lists**
+
 # **0x0A. C - Argc, argv**
 
 # **0x0B. C - Malloc free**
@@ -27,3 +33,5 @@
 # **0x0D. C - Preprocessor**
 
 # **0x0E. C - Structures, typedef**
+
+# **0x0F. C - Function pointers**
