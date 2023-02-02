@@ -9,19 +9,18 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len;
-	int i;
 
-	int j = 0;
-
+	int base = 1;
 	unsigned int sum = 0;
 
-	if (b == NULL || (b != '0' && b != '1'))
+	if (b == NULL || (*b != '0' && *b != '1'))
 		return (0);
 	len = _strlen(b);
-	for (i = (len - 1); i >= 0; i--)
+	while (len)
 	{
-		sum += ((2 * *j) * (b[i] - '0'));
-		j++;
+		sum += ((b[len - 1] - '0') * base);
+		base *= 2;
+		len--;
 	}
 
 	return (sum);
