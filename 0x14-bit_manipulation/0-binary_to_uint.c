@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	while (*b)
 	{
 		if (*b == '1')
-			sum = (sum << 1) | 1;
+			sum = ((sum << 1) + 1) | 1;
 		else if (*b == '0')
 			sum <<= 1;
 		else
