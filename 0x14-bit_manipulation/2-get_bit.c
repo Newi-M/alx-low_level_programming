@@ -9,5 +9,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	return ((n & (~n << index)) == 0);
+	int bit_at_index;
+
+	if (index > (sizeof(unsigned long int) * 8))
+		return (-1);
+
+	bit_at_index = (n >> index) & 1;
+	return (bit_at_index);
 }
