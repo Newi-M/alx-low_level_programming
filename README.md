@@ -24,6 +24,8 @@
 
 # **0x13. C - More singly linked lists**
 
+# **0x14. C - Bit manipulation
+
 # **0x0A. C - Argc, argv**
 
 # **0x0B. C - Malloc free**
