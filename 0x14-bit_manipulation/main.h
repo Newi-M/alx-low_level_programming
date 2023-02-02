@@ -12,24 +12,5 @@ int get_bit(unsigned long int n, unsigned int index);
 int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
-unsigned int _strlen(const char *c);
-
-/**
- * _strlen - length of string
- * @c: string
- *
- * Return: length
- */
-unsigned int _strlen(const char *c)
-{
-	unsigned int len = 0;
-
-	while (c != 0)
-	{
-		len++;
-	}
-
-	return (len);
-}
 
 #endif
