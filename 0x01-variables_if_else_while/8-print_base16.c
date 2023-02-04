@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - print numbers of base 16
+ * main - prints numbers of base 16
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int n;
-	char c;
+	int num;
+	char letter;
 
-	for (n = 0; n < 10; n++)
-		putchar((n % 10) + '0');
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-	for (c = 'a'; c <= 'f'; c++)
-		putchar(c);
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
 
 	putchar('\n');
 
