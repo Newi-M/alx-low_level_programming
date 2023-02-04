@@ -10,7 +10,7 @@ int main(void)
 {
 	long i, quotient;
 	long num = 612852475143;
-	double _sqrt = sqrt(n);
+	double _sqrt = sqrt(num);
 
 	for (i = 1; i < _sqrt; i++)
 	{
