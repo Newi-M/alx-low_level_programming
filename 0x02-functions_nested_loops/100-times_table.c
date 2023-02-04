@@ -2,47 +2,47 @@
 
 /**
  * print_times_table - Prints a multiplication table
- * @n: input
+ * @n: number
  *
  * Return: nothing
  */
 void print_times_table(int n)
 {
-	int x, y, z;
+	int num1, num2, product;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (x = 0; x <= n; x++)
+		for (num1 = 0; num1 <= n; num1++)
 		{
-			for (y = 0; y <= n; y++)
+			for (num2 = 0; num2 <= n; num2++)
 			{
-				z = x * y;
-				if (z > 99)
+				product = num1 * num2;
+				if (product > 99)
 				{
 					_putchar(',');
 					_putchar(32);
-					_putchar((z / 100) + '0');
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
+					_putchar((product / 100) + '0');
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
 				}
-				else if (z > 9)
+				else if (product > 9)
 				{
 					_putchar(',');
 					_putchar(32);
 					_putchar(32);
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
 				}
 				else
 				{
-					if (y != 0)
+					if (num2 != 0)
 					{
 						_putchar(',');
 						_putchar(32);
 						_putchar(32);
 						_putchar(32);
 					}
-					_putchar(z + '0');
+					_putchar(product + '0');
 				}
 			}
 			_putchar('\n');
