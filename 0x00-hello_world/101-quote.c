@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main -Entry
+ * main - prints string given
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
