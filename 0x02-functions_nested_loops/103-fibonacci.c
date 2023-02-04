@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i = 0;
-	long num1 = 1, num2 = 2, fibonacii_sum, sum = 0;
+	long num1 = 1, num2 = 2, fibonacci_sum, sum = 0;
 
 	while (num2 <= 4000000)
 	{
