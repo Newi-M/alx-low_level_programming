@@ -3,32 +3,32 @@
 /**
  * main - prints fizz buzz
  *
- * Return: 0
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int x;
+	int num;
 
-	for (x = 1; x <= 100; x++)
+	for (num = 1; num <= 100; num++)
 	{
-		if ((x % 3 == 0) && (x % 5 == 0))
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
 			printf("FizzBuzz");
 		}
-		else if (x % 3 == 0)
+		else if (num % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (x % 5 == 0)
+		else if (num % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%d", num);
 		}
 
-		if (x != 100)
+		if (num != 100)
 		{
 			printf(" ");
 		}
