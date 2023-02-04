@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - print sum ofeven fibonacci numbers
+ * main - prints the sum of even fibonacci numbers
  *
- * Return: 0
+ * Return: 0 (Success)
  */
 int main(void)
 {
 	int i = 0;
-	long n1 = 1, n2 = 2, fn, sum = 0;
+	long num1 = 1, num2 = 2, fibonacii_sum, sum = 0;
 
-	while (n2 <= 4000000)
+	while (num2 <= 4000000)
 	{
-		fn = n1 + n2;
-		n1 = n2;
-		n2 = fn;
+		fibonacci_sum = num1 + num2;
+		num1 = num2;
+		num2 = fibonacci_sum;
 
-		if (n1 % 2 == 0)
-			sum = sum + n1;
+		if (num1 % 2 == 0)
+			sum = sum + num1;
 
 		i++;
 	}
