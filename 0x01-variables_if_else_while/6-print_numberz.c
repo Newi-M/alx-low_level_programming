@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - print one digit numbers
+ * main - prints one digit numbers
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int n;
+	int num;
 
-	for (n = 0; n < 10; n++)
+	for (num = 0; num < 10; num++)
 	{
-		putchar((n % 10) + '0');
+		putchar((num % 10) + '0');
 	}
 
 	putchar('\n');
