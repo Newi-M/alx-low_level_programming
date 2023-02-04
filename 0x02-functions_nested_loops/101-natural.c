@@ -3,20 +3,20 @@
 /**
  * main - Prints the sum of all multiples of 3 or 5 up to 1024
  *
- * Return: 0
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int i, m = 0;
+	int num, sum = 0;
 
-	while (i < 1024)
+	while (num < 1024)
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
+		if ((num % 3 == 0) || (num % 5 == 0))
 		{
-			m += i;
+			sum += num;
 		}
-		i++;
+		num++;
 	}
-	printf("%d\n", m);
+	printf("%d\n", sum);
 	return (0);
 }
