@@ -1,10 +1,9 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * print_diagonal - print diagonal
  *
- * @n: input number
+ * @n: number
  *
  * Return: nothing
  */
